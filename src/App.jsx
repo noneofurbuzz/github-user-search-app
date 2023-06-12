@@ -16,16 +16,16 @@ function App() {
     })
   }
   return (
-    <div className="bg-dark-navy-blue w-full min-h-screen flex flex-col justify-center items-center">
-      <div className="xs:w-5/6 sm:w-3/4 lg:w-3/5 w-full max-w-full">
+    <div className="bg-dark-navy-blue w-full min-h-screen flex flex-col justify-center items-center py-20">
+      <div className="w-11/12 xs:w-5/6 sm:w-3/4 lg:w-120 ">
        <Navbar />
        </div>
-       <div className="xs:w-5/6 w-full max-w-full sm:w-3/4 lg:w-3/5 max-w-508">
+       <div className="xs:w-5/6 w-11/12 sm:w-3/4 lg:w-120">
         <Searchbar 
         onChange = {handleUser}
         user = {user.username}/>
        </div>
-       <div className="xs:w-5/6 w-full max-w-full sm:w-3/4 lg:w-3/5 max-w-508">
+       <div className="xs:w-5/6 w-11/12 sm:w-3/4 lg:w-120">
         <Profile 
         user = {user.username}/>
        </div>

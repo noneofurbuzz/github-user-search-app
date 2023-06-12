@@ -29,11 +29,9 @@ export default {
         "884":"884px"
       },
       width:{
-        "100":"30rem"
+        "100":"30rem",
+        "120":"50rem"
       },
-      minWidth:{
-        "508":"508px"
-      }
       },
   plugins: [],
 }
