@@ -17,32 +17,32 @@ export default function Profile(){
     })
     return(
         <div className="text-white bg-navy-blue rounded-xl mt-6 flex ">
-            <img src={profile.picture} alt="avatar" className=" flex-shrink-0 w-16 mx-6 my-8 self-baseline sm:w-24 sm:mx-8" />
+            <img src={profile.picture} alt="avatar" className=" flex-shrink-0 w-16 mx-6 my-8 self-baseline 480:w-24 480:mx-8" />
             <div className="my-8 mr-4">
             <div className="flex flex-col mr-3 lg:flex-row lg:items-baseline lg:justify-between">
             <div>
-            <p className="font-bold text-lg mb-1 sm:text-2xl">{profile.name}</p>
-            <p className="text-blue mb-1 text-xs sm:text-base">@{profile.username}</p>
+            <p className="font-bold text-lg mb-1 480:text-2xl">{profile.name}</p>
+            <p className="text-blue mb-1 text-xs 480:text-base">@{profile.username}</p>
             </div>
-            <p className="text-xs sm:text-base">Joined {profile.date}</p>
+            <p className="text-xs 480:text-base">Joined {profile.date}</p>
            </div>
-           <div className="mt-6 sm:mt-10 -ml-20 text-xs sm:text-base lg:ml-0">
-            <p className="mr-4 sm:-ml-12 leading-loose lg:ml-0">{profile.bio}</p>
-            <div className="bg-dark-navy-blue-2 flex mr-4 justify-around mt-8 sm:-ml-12 rounded-xl py-4 lg:ml-0">
+           <div className="mt-6 480:mt-10 -ml-20 text-xs 480:text-base lg:ml-0">
+            <p className="mr-4 480:-ml-12 leading-loose lg:ml-0">{profile.bio}</p>
+            <div className="bg-dark-navy-blue-2 flex mr-4 justify-around mt-8 480:-ml-12 rounded-xl py-4 lg:ml-0">
                 <div className="flex flex-col">
                     <p>Repos</p>
-                    <p className="font-bold text-lg sm:text-2xl mx-auto sm:mx-0">{profile.repo}</p>
+                    <p className="font-bold text-lg 480:text-2xl mx-auto sm:mx-0">{profile.repo}</p>
                 </div>
                 <div className="flex flex-col">
                     <p>Followers</p>
-                    <p className="font-bold text-lg sm:text-2xl mx-auto sm:mx-0">{profile.followers}</p>
+                    <p className="font-bold text-lg 480:text-2xl mx-auto sm:mx-0">{profile.followers}</p>
                 </div>
                 <div className="flex flex-col">
                     <p>Following</p>
-                    <p className="font-bold text-lg sm:text-2xl mx-auto sm:mx-0">{profile.following}</p>
+                    <p className="font-bold text-lg 480:text-2xl mx-auto sm:mx-0">{profile.following}</p>
                 </div>
             </div>
-            <div className="flex flex-col sm:-ml-12 md:flex-row md:justify-between lg:ml-0">
+            <div className="flex flex-col 480:-ml-12 md:flex-row md:justify-between lg:ml-0">
                 <div className="flex flex-col mt-8">
                 <div className="flex items-center mb-4">
                 <svg height="20" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M12.797 3.425C11.584 1.33 9.427.05 7.03.002a7.483 7.483 0 00-.308 0C4.325.05 2.17 1.33.955 3.425a6.963 6.963 0 00-.09 6.88l4.959 9.077.007.012c.218.38.609.606 1.045.606.437 0 .828-.226 1.046-.606l.007-.012 4.96-9.077a6.963 6.963 0 00-.092-6.88zm-5.92 5.638c-1.552 0-2.813-1.262-2.813-2.813s1.261-2.812 2.812-2.812S9.69 4.699 9.69 6.25 8.427 9.063 6.876 9.063z" fill="#4b6a9b"/></svg>

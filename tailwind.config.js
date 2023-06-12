@@ -26,6 +26,7 @@ export default {
       screens:{
         "xs":"360px",
         "500":"500px",
+        "480":"480px",
         "884":"884px"
       },
       width:{
