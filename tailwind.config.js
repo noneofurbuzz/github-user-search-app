@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-        "space" : ["space","serif"]
+        "space" : ["space","monospace"]
       },
       colors:{
     "whitish-blue": "hsl(227, 100%, 98%)",
