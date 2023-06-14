@@ -21,7 +21,7 @@ export default {
     "navy-blue-2": "hsl(222, 44%, 70%)",
     "dark-navy-blue": "hsl(220, 40%, 13%)",
     "dark-navy-blue-2": "hsl(220, 18%, 16%)",
-    "orange": "hsl(0, 91%, 62%)"
+    "red": "hsl(0, 91%, 62%)"
       },
       screens:{
         "xs":"360px",
@@ -33,6 +33,10 @@ export default {
         "100":"30rem",
         "120":"50rem"
       },
+      animation:{
+        "bounce1" : "bounce 1s infinite 200ms",
+        "bounce2" : "bounce 1s infinite 400ms"
+      }
       },
   plugins: [],
 }
