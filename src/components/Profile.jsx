@@ -18,7 +18,7 @@ export default function Profile(prop){
            </div>
            <div className="mt-6 480:mt-10 -ml-20 text-xs 480:text-base lg:ml-0 lg:mt-3">
             <p className="mr-4 480:-ml-12 leading-loose lg:ml-0">{prop.profile.bio != null ? prop.profile.bio : "This profile has no bio"}</p>
-            <div className="bg-dark-navy-blue-2 flex mr-4 justify-around mt-8 480:-ml-12 rounded-xl py-4 lg:ml-0">
+            <div className="bg-dark-navy-blue flex mr-4 justify-around mt-8 480:-ml-12 rounded-xl py-4 lg:ml-0">
                 <div className="flex flex-col ">
                     <p>Repos</p>
                     <p className="font-bold text-lg 480:text-2xl mx-auto sm:mx-0">{prop.profile.public_repos}</p>
