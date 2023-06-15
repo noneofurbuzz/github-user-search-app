@@ -16,15 +16,15 @@
 
 #### Dark theme
 
-![](/screenshots/dark-theme.png)
+![](./public/screenshots/dark-theme.png)
 
 #### Light theme
 
-![](./screenshots/light-theme.png)
+![](./public/screenshots/light-theme.png)
 
 #### Error checks
 
-![](./screenshots/error.png)
+![](./public/screenshots/error.png)
 
 ### Links
 
