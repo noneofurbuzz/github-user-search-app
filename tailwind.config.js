@@ -21,7 +21,8 @@ export default {
     "navy-blue-2": "hsl(222, 44%, 70%)",
     "dark-navy-blue": "hsl(220, 40%, 13%)",
     "dark-navy-blue-2": "hsl(220, 18%, 16%)",
-    "red": "hsl(0, 91%, 62%)"
+    "red": "hsl(0, 91%, 62%)",
+    "moon":"#697C9A"
       },
       screens:{
         "xs":"360px",
@@ -31,7 +32,8 @@ export default {
         "600" : "580px"
       },
       width:{
-        "100":"30rem",
+        "100":"33rem",
+        "110":"35rem",
         "120":"50rem"
       },
       animation:{

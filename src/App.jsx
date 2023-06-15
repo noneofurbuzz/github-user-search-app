@@ -10,6 +10,7 @@ function App() {
   const [loading,setLoading] = useState(true)
   const [input,setInput] = useState("octocat")
   const [error,setError] = useState(false)
+  const [theme,setTheme] = useState(true)
   function handleUser(event){
     const {name,value} = event.target
     setUser((prevUser) => {
@@ -18,7 +19,7 @@ function App() {
       [name] : value
       }
     },
-    setError(false))
+    )
   }
 
   const [github,setGithub] = useState([])
@@ -27,6 +28,7 @@ function App() {
       const res = await fetch(`https://api.github.com/users/${input}`)
       if(res.status == 200){
       const data = await res.json()
+      setError(false)
       console.log(data)
       setGithub(data)
       const timerId = setTimeout(() => {
@@ -58,7 +60,9 @@ function App() {
   company : "",
   message : ""
  })
- 
+ function toggleTheme(){
+  setTheme(prevTheme => !prevTheme)
+ }
  useEffect(() => {
   setProfile((prevProfile) => {
     return{
@@ -75,32 +79,36 @@ function App() {
     blog : github.blog,
     twitter_username : github.twitter_username,
     company : github.company,
-    message :github.message
       }})
  },[github])
 
-  function handleClick(){
+  function handleClick(event){
+    event.preventDefault()
     setInput(user.username)
   }
   return (
-    <div className="bg-dark-navy-blue w-full min-h-screen flex flex-col justify-center items-center py-20">
+    <div className={`${theme ? "bg-dark-navy-blue" : "bg-whitish-blue"} w-full min-h-screen flex flex-col justify-center items-center py-20`}>
       {loading ? <Loader
-      /> : <>
-      <div className="w-11/12 xs:w-5/6 sm:w-3/4 lg:w-120 ">
-       <Navbar />
+      dark = {theme}/> : <>
+      <div className="w-11/12 xs:w-5/6 sm:w-110 600:w-100 lg:w-120 ">
+       <Navbar 
+       onClick = {toggleTheme}
+       dark = {theme}/>
        </div>
-       <div className="xs:w-5/6 w-11/12 sm:w-3/4 lg:w-120">
+       <div className="xs:w-5/6 w-11/12 sm:w-110 600:w-100 lg:w-120 ">
         <Searchbar 
         onChange = {handleUser}
         user = {user.username}
         onClick = {handleClick}
-        error = {error}/>
+        error = {error}
+        dark = {theme}/>
        </div>
-       <div className ="xs:w-5/6 w-11/12 sm:w-3/4 lg:w-120">
+       <div className ="xs:w-5/6 w-11/12 600:w-100 sm:w-110 lg:w-120 ">
         <Profile 
         input = {input}
         user = {user.username}
         profile = {profile}
+        dark = {theme}
         />
        </div>
        </>}
